@@ -1,0 +1,26 @@
+/* Custom styling for the navbar */
+.custom-navbar {
+    background-color: rgb(2, 17, 1) !important; 
+    box-shadow: none !important; /* Optional: Remove default shadow */
+  }
+  
+  .navbar-title {
+    color: #ffffff !important; /* Change text color */
+    font-weight: bold;
+  }
+  
+  /* Customize button text color */
+  .MuiButton-root {
+    color: #ffffff !important; /* Change button text color */
+  }
+  
+  .navbar-links a {
+    color: inherit; /* Keeps the original text color */
+    text-decoration: none; /* Removes the underline */
+  }
+  
+  .navbar-links a:hover {
+    color: inherit; /* Keeps the original hover color */
+    text-decoration: none; /* No underline on hover either */
+  }
+  

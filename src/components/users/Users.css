@@ -1,0 +1,118 @@
+/* General reset for body and html */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply the gradient only to the users page container */
+.users-page {
+  min-height: 100vh;
+  background: linear-gradient(45deg, rgba(102, 8, 102, 0.687) 5%, #01171f 95%) !important; /* Adjust the percentages */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px !important;
+}
+
+/* Title styling */
+.users-title {
+  text-align: center !important;
+  color: white !important;
+  margin-bottom: 20px !important;
+  font-weight: bold !important; /* Make the title bold */
+}
+
+/* Flip card container */
+.flip-card {
+  perspective: 1000px !important;
+  width: 100% !important;
+  height: 200px !important;
+  position: relative !important;
+}
+
+.flip-card-inner {
+  width: 100% !important;
+  height: 100% !important;
+  transition: transform 0.6s ease-in-out !important;
+  transform-style: preserve-3d !important;
+  position: relative !important;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg) !important;
+}
+
+/* Front and back of the card */
+.user-card {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 15px !important;
+  backface-visibility: hidden !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+/* Front side of the card */
+.front {
+  background-color: rgba(255, 255, 255, 0.8) !important; /* Dark transparent background */
+  color: white !important;
+  transform: rotateY(0deg) !important;
+  z-index: 2 !important;
+  backface-visibility: hidden !important;
+}
+
+/* Back side of the card */
+.back {
+  background-color: rgba(189, 195, 199, 0.8) !important; /* Light transparent background */
+  color: black !important;
+  transform: rotateY(180deg) !important;
+  z-index: 1 !important;
+  backface-visibility: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Avatar and name styling */
+.MuiAvatar-root {
+  border: 2px solid #4caf50 !important; /* Keep avatar border vibrant */
+}
+
+/* Apply bold colors and font for user information */
+.user-card .MuiTypography-root {
+  font-weight: bold !important; /* Make all text bold */
+}
+
+.user-card .MuiTypography-h6 {
+  color: #f39c12 !important; /* Bright yellow for the username */
+}
+
+.user-card .MuiTypography-body1 {
+  color: #e74c3c !important; /* Bold red for labels like 'Rating' */
+}
+
+.user-card .MuiTypography-body2 {
+  color: #9b59b6 !important; /* Vibrant purple for secondary text like ranks */
+}
+
+/* Adjust rating title and color */
+.user-rating {
+  font-weight: bold !important;
+  font-size: 1.2rem !important;
+  color: black !important; /* Keep bold black for ratings */
+}
+
+.user-rank-title {
+  font-weight: bold !important;
+  color: white !important; /* Bold white for rank titles on the front */
+}
+
+/* Back of card text */
+.back .MuiTypography-root {
+  font-weight: bold !important;
+  color: #2c3e50 !important; /* Dark blue for the back text */
+}

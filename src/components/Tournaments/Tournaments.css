@@ -1,0 +1,30 @@
+.tournaments-page {
+    padding: 20px;
+  }
+  
+  .tournaments-section {
+    margin-bottom: 40px;
+  }
+  
+  .tournament-title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .MuiTableCell-head {
+    font-weight: bold;
+}
+
+.MuiTableCell {
+    width: 25%; /* Adjust the width as needed */
+}
+
+.MuiButton-containedPrimary {
+    background-color: #4caf50; /* Custom color for register buttons */
+}
+
+.MuiButton-containedSecondary {
+    background-color: #ff5722; /* Different color for ongoing tournaments button */
+}
+
+  
